@@ -41,7 +41,7 @@ function App() {
             <div className="container-fluid vh-100 d-flex align-items-center justify-content-center gap-5">
               {posts.map(function(post){
                 let unique = v4();
-                console.log(unique);
+                console.log(post);
                 return <Card key={unique} title={post.name} img={post.img} text={post.text}/>
                 })}            
             </div>
